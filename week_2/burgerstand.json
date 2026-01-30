@@ -1,0 +1,25 @@
+{
+    "customer": {
+      "_id": "CUST-1047",
+      "firstName": "Alyssa",
+      "lastName": "Hernandez",
+      "burgers": [
+        {
+          "_id": "BURG-9001",
+          "burgerName": "Smokehouse Bacon Cheddar",
+          "price": 11.49
+        },
+        {
+          "_id": "BURG-9002",
+          "burgerName": "Spicy Jalapeño Pepper Jack",
+          "price": 10.99
+        },
+        {
+          "_id": "BURG-9003",
+          "burgerName": "Mushroom Swiss Classic",
+          "price": 10.49
+        }
+      ]
+    }
+  }
+  
