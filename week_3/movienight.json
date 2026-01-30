@@ -1,0 +1,47 @@
+{
+    "_id": "viewer_9f2c1a",
+    "firstName": "Will",
+    "lastName": "Southard",
+    "watchedMovies": [
+      {
+        "movie": {
+          "_id": "movie_a13d77",
+          "movieName": "Interstellar",
+          "genre": "Science Fiction"
+        },
+        "rating": {
+          "_id": "rating_6c0b22",
+          "ratingScore": 9,
+          "viewerId": "viewer_9f2c1a",
+          "movieId": "movie_a13d77"
+        }
+      },
+      {
+        "movie": {
+          "_id": "movie_c84e10",
+          "movieName": "Spider-Man: Into the Spider-Verse",
+          "genre": "Animation"
+        },
+        "rating": {
+          "_id": "rating_0f8a41",
+          "ratingScore": 8,
+          "viewerId": "viewer_9f2c1a",
+          "movieId": "movie_c84e10"
+        }
+      },
+      {
+        "movie": {
+          "_id": "movie_4b91ee",
+          "movieName": "Knives Out",
+          "genre": "Mystery"
+        },
+        "rating": {
+          "_id": "rating_2bd933",
+          "ratingScore": 7,
+          "viewerId": "viewer_9f2c1a",
+          "movieId": "movie_4b91ee"
+        }
+      }
+    ]
+  }
+  
