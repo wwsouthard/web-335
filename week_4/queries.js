@@ -1,0 +1,5 @@
+db.users.find()
+db.users.findOne({ email: "jbach@me.com" })
+db.users.findOne({ lastName: "Mozart" })
+db.users.findOne({ firstName: "Richard" })
+db.users.findOne({ employeeId: "1010" })
