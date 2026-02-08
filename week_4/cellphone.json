@@ -1,0 +1,45 @@
+{
+    "users": [
+      {
+        "_id": "U1001",
+        "firstName": "Will",
+        "lastName": "Southard"
+      }
+    ],
+    "chargers": [
+      {
+        "_id": "C2001",
+        "chargerType": "USB-C Power Delivery",
+        "voltage": 9
+      },
+      {
+        "_id": "C2002",
+        "chargerType": "Qi Wireless Pad",
+        "voltage": 5
+      }
+    ],
+    "devices": [
+      {
+        "_id": "D3001",
+        "deviceName": "iPhone 15 Pro",
+        "deviceType": "Smartphone",
+        "charger_id": "C2001",
+        "user_id": "U1001"
+      },
+      {
+        "_id": "D3002",
+        "deviceName": "iPad Air (5th Gen)",
+        "deviceType": "Tablet",
+        "charger_id": "C2001",
+        "user_id": "U1001"
+      },
+      {
+        "_id": "D3003",
+        "deviceName": "AirPods Pro (2nd Gen)",
+        "deviceType": "Wireless Earbuds",
+        "charger_id": "C2002",
+        "user_id": "U1001"
+      }
+    ]
+  }
+  
