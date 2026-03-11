@@ -7,6 +7,7 @@ The **WhatABook application** is a Python console program that connects to a **M
 This program demonstrates the following concepts:
 
 - Connecting a Python application to **MongoDB Atlas**
+- **Modular configuration** — cluster address and database name are entered at runtime (nothing hardcoded)
 - Querying **MongoDB collections**
 - Using **aggregation with `$lookup`**
 - Menu-driven console applications
@@ -100,21 +101,7 @@ pip install pymongo
 
 ---
 
-## Step 3: Configure the Application
-
-Open the file **`whatABook_app.py`**.
-
-Locate the cluster configuration section and update the cluster address if necessary.
-
-Example:
-
-```
-CLUSTER_ADDRESS = "cluster0.xxxxx.mongodb.net"
-```
-
----
-
-## Step 4: Run the Application
+## Step 3: Run the Application
 
 While in the project directory and with the virtual environment activated, run the program:
 
@@ -130,16 +117,18 @@ python3 whatABook_app.py
 
 ---
 
-## Step 5: Login to MongoDB
+## Step 4: Connection and Login
 
-When the program starts, it will prompt for your MongoDB Atlas credentials.
+When the program starts, it prompts for connection details and MongoDB Atlas credentials. Nothing is hardcoded — you supply cluster, database, and credentials each run.
 
 ```
+Enter cluster address (e.g. yourcluster.xxxxx.mongodb.net): cluster0.xxxxx.mongodb.net
+Enter database name: whatABookDB
 Enter MongoDB username: web335_user
 Enter MongoDB password: s3cret
 ```
 
-After successful login, the application will display database statistics and the main menu.
+After a successful connection, the application displays database statistics and the main menu.
 
 ---
 
@@ -182,6 +171,7 @@ The application will display the list of books stored in the database.
 
 ## Notes
 
+- The application is **fully modular**: cluster address and database name are entered at runtime with your username and password. No connection details are hardcoded in the source.
 - The program requires an **active internet connection** to connect to MongoDB Atlas.
 - Collection names are **case-sensitive**.
-- Ensure the **installation script has been executed before running the application**.
+- Ensure the **installation script has been executed before running the application** (and use the same database name when prompted).
