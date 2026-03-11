@@ -11,14 +11,6 @@ import sys
 
 
 # --------------------------------------------------
-# MongoDB Cluster Configuration
-# --------------------------------------------------
-
-CLUSTER_ADDRESS = "bellevueuniversity.agiceyx.mongodb.net"   # Replace with your Atlas cluster
-DATABASE_NAME = "whatABookDB"
-
-
-# --------------------------------------------------
 # Startup Banner
 # --------------------------------------------------
 
@@ -36,12 +28,14 @@ def show_banner():
 
 def connect_to_database():
 
-    print("\n--- MongoDB Login ---")
+    print("\n--- MongoDB Connection ---")
 
+    cluster_address = input("Enter cluster address (e.g. yourcluster.xxxxx.mongodb.net): ").strip()
+    database_name = input("Enter database name: ").strip()
     username = input("Enter MongoDB username: ")
     password = getpass("Enter MongoDB password: ")
 
-    connection_string = f"mongodb+srv://{username}:{password}@{CLUSTER_ADDRESS}/{DATABASE_NAME}?retryWrites=true&w=majority"
+    connection_string = f"mongodb+srv://{username}:{password}@{cluster_address}/{database_name}?retryWrites=true&w=majority"
 
     try:
         client = MongoClient(connection_string)
@@ -49,7 +43,7 @@ def connect_to_database():
 
         print("\nConnection successful.\n")
 
-        return client[DATABASE_NAME]
+        return client[database_name]
 
     except Exception as e:
         print("\nConnection failed.")
