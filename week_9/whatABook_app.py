@@ -15,7 +15,7 @@ import sys
 # --------------------------------------------------
 
 CLUSTER_ADDRESS = "bellevueuniversity.agiceyx.mongodb.net"   # Replace with your Atlas cluster
-DATABASE_NAME = "whatabook"
+DATABASE_NAME = "whatABookDB"
 
 
 # --------------------------------------------------

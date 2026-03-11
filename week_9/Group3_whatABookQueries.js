@@ -1,11 +1,11 @@
 /**
- * Title: group3-whatabook.js
+ * Title: Group3_whatABookQueries.js
  * Author: Group 3
  * Date: 3/11/2026
  * Description: Queries to showcase the WhatABook database.
  */
 
-use("whatabook");
+use("whatABookDB");
 
 /*
  * Query 1: Display a list of books.

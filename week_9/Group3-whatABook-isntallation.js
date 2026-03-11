@@ -1,7 +1,7 @@
 /**
  * Title: Group3-whatABook-installation.js
  * Author: Group 3
- * Date: <enter date>
+ * Date: 3/11/2026
  * Description: MongoDB Shell script to build and seed the WhatABook database.
  *
  * How to run (mongosh):
@@ -12,7 +12,7 @@
 // ------------------------------
 // Database Reset
 // ------------------------------
-const DB_NAME = "whatabook";
+const DB_NAME = "whatABookDB";
 db = db.getSiblingDB(DB_NAME);
 
 print(`\n--- Resetting database: ${DB_NAME} ---`);
