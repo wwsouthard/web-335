@@ -14,7 +14,7 @@ import sys
 # MongoDB Cluster Configuration
 # --------------------------------------------------
 
-CLUSTER_ADDRESS = "cluster0.xxxxx.mongodb.net"   # Replace with your Atlas cluster
+CLUSTER_ADDRESS = "bellevueuniversity.agiceyx.mongodb.net"   # Replace with your Atlas cluster
 DATABASE_NAME = "whatabook"
 
 
